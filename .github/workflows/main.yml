@@ -1,0 +1,15 @@
+- name: action-phpcs
+  # You may pin to the exact commit or the version.
+  # uses: thenabeel/action-phpcs@ad4dc4eb272624204befdf0249959972cfc432b8
+  uses: thenabeel/action-phpcs@v8
+  with:
+    # files to check
+    files: # optional, default is **.php
+    # scope to annotate errors or warnings - either "file" to check entire file or "blame" to check only lines changed by author of current PR
+    scope: # optional, default is blame
+    # path to phpcs executable
+    phpcs_path: # optional, default is phpcs
+    # Code style standard name (PEAR, ) or path to a phpcs.xml file
+    standard: # optional
+    # Whether action should fail on warnings or not, default to true (fails)
+    fail_on_warnings: # optional
