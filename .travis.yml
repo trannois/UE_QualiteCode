@@ -1,9 +1,0 @@
-language: php
-php:
-  - 7.1.9
-
-before_script:
-  curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
-
-script:
-  php phpcs.phar Validateur.php
