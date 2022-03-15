@@ -6,4 +6,4 @@ before_script:
   curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 
 script:
-  php phpcs.phar test.php
+  php phpcs.phar Validateur.php
